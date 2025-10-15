@@ -1,0 +1,48 @@
+/* O CSS define a aparência da página */
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    /* Tipo de fonte */
+    background-color: #f0f2f5;
+    /* Cor de fundo */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 40px;
+    /* Espaço interno em volta do conteúdo */
+}
+
+/* Título principal (tag <h1>) */
+h1 {
+    color: #2a4d8f;
+    /* Cor do texto */
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #2a4d8f;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove borda padrão */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Muda o cursor para “mãozinha” */
+    font-size: 16px;
+    /* Tamanho da letra */
+}
+
+/* Efeito quando o mouse passa sobre o botão */
+button:hover {
+    background-color: #1a3670;
+}
+
+/* Estilo do parágrafo */
+p {
+    font-size: 18px;
+    color: #333;
+}

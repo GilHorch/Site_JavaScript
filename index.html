@@ -17,47 +17,6 @@
   <!-- Título que aparece na aba do navegador -->
   <title>Página de Exemplo</title>
 
-  <!-- =============================================== -->
-  <!-- =============== ESTILO (CSS) ================== -->
-  <!-- =============================================== -->
-  <style>
-    /* O CSS define a aparência da página */
-
-    /* Estilo geral do corpo da página */
-    body {
-      font-family: Arial, sans-serif; /* Tipo de fonte */
-      background-color: #f0f2f5;      /* Cor de fundo */
-      text-align: center;             /* Centraliza o texto */
-      padding: 40px;                  /* Espaço interno em volta do conteúdo */
-    }
-
-    /* Título principal (tag <h1>) */
-    h1 {
-      color: #2a4d8f; /* Cor do texto */
-    }
-
-    /* Estilo dos botões */
-    button {
-      background-color: #2a4d8f; /* Cor de fundo */
-      color: white;              /* Cor do texto */
-      border: none;              /* Remove borda padrão */
-      padding: 10px 20px;        /* Espaçamento interno */
-      border-radius: 8px;        /* Bordas arredondadas */
-      cursor: pointer;           /* Muda o cursor para “mãozinha” */
-      font-size: 16px;           /* Tamanho da letra */
-    }
-
-    /* Efeito quando o mouse passa sobre o botão */
-    button:hover {
-      background-color: #1a3670;
-    }
-
-    /* Estilo do parágrafo */
-    p {
-      font-size: 18px;
-      color: #333;
-    }
-  </style>
 </head>
 
 <body>
@@ -74,34 +33,7 @@
   <!-- Botão que executa a função "mostrarMensagem()" quando clicado -->
   <button onclick="mostrarMensagem()">Clique aqui</button>
 
-  <!-- =============================================== -->
-  <!-- ============= INTERATIVIDADE (JS) ============= -->
-  <!-- =============================================== -->
-    <script>
-    // Variável que conta quantas vezes o botão foi clicado
-    let contadorCliques = 0;
 
-    function mostrarMensagem() {
-      // Pega o elemento com id="mensagem"
-      const mensagem = document.getElementById("mensagem");
-
-      // Aumenta o número de cliques a cada vez que o botão é pressionado
-      contadorCliques++;
-
-      // Se for o primeiro clique:
-      if (contadorCliques === 1) {
-        mensagem.textContent = "🎉 Você clicou pela primeira vez!";
-      }
-      // Se for o segundo clique:
-      else if (contadorCliques === 2) {
-        mensagem.textContent = "✨ Agora é o segundo clique!";
-      }
-      // A partir do terceiro clique, alterna as mensagens
-      else {
-        contadorCliques = 0; // zera o contador para recomeçar
-        mensagem.textContent = "🔁 Voltamos ao início! Clique novamente.";
-      }
-    }
-  </script>
 </body>
+
 </html>
