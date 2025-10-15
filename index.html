@@ -1,0 +1,96 @@
+<!--
+  Toda página HTML começa com esta linha:
+  Ela indica ao navegador que o documento segue o padrão HTML5.
+-->
+<!DOCTYPE html>
+
+<!-- A tag <html> envolve todo o conteúdo da página -->
+<html lang="pt-BR">
+
+<head>
+  <!-- Define o conjunto de caracteres usados (acentos, etc.) -->
+  <meta charset="UTF-8" />
+
+  <!-- Faz o site se adaptar ao tamanho da tela (celular, tablet, PC) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que aparece na aba do navegador -->
+  <title>Página de Exemplo</title>
+
+  <!-- =============================================== -->
+  <!-- =============== ESTILO (CSS) ================== -->
+  <!-- =============================================== -->
+  <style>
+    /* O CSS define a aparência da página */
+
+    /* Estilo geral do corpo da página */
+    body {
+      font-family: Arial, sans-serif; /* Tipo de fonte */
+      background-color: #f0f2f5;      /* Cor de fundo */
+      text-align: center;             /* Centraliza o texto */
+      padding: 40px;                  /* Espaço interno em volta do conteúdo */
+    }
+
+    /* Título principal (tag <h1>) */
+    h1 {
+      color: #2a4d8f; /* Cor do texto */
+    }
+
+    /* Estilo dos botões */
+    button {
+      background-color: #2a4d8f; /* Cor de fundo */
+      color: white;              /* Cor do texto */
+      border: none;              /* Remove borda padrão */
+      padding: 10px 20px;        /* Espaçamento interno */
+      border-radius: 8px;        /* Bordas arredondadas */
+      cursor: pointer;           /* Muda o cursor para “mãozinha” */
+      font-size: 16px;           /* Tamanho da letra */
+    }
+
+    /* Efeito quando o mouse passa sobre o botão */
+    button:hover {
+      background-color: #1a3670;
+    }
+
+    /* Estilo do parágrafo */
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =============================================== -->
+  <!-- =============== CONTEÚDO (HTML) =============== -->
+  <!-- =============================================== -->
+
+  <!-- Título da página -->
+  <h1>Olá, mundo!</h1>
+
+  <!-- Parágrafo com um texto que será alterado pelo JavaScript -->
+  <p id="mensagem">Clique no botão abaixo para ver o JavaScript em ação.</p>
+
+  <!-- Botão que executa a função "mostrarMensagem()" quando clicado -->
+  <button onclick="mostrarMensagem()">Clique aqui</button>
+
+  <!-- =============================================== -->
+  <!-- ============= INTERATIVIDADE (JS) ============= -->
+  <!-- =============================================== -->
+  <script>
+    /*
+      O JavaScript dá vida à página.
+      Ele permite responder a eventos, como cliques e digitação.
+    */
+
+    // Função que será executada quando o botão for clicado
+    function mostrarMensagem() {
+      // Busca o elemento HTML com id="mensagem"
+      const mensagem = document.getElementById("mensagem");
+
+      // Altera o texto dentro do parágrafo
+      mensagem.textContent = "🎉 Você clicou no botão e o JavaScript funcionou!";
+    }
+  </script>
+</body>
+</html>
